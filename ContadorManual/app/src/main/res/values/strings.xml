@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Manual Counter</string>
+    <string name="titulo">Counter</string>
+    <string name="mas">+</string>
+    <string name="menos">-</string>
+    <string name="cero">0</string>
+    <string name="reset">Reset</string>
+    <string name="negativo">Allow negative values</string>
+</resources>

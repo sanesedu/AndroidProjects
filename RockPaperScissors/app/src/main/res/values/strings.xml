@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Rock Paper Scissors</string>
+    <string name="rock">Rock</string>
+    <string name="paper">Paper</string>
+    <string name="scissors">Scissors</string>
+    <string name="new_game">New Game</string>
+    <string name="home">Home</string>
+    <string name="opponent">Opponent</string>
+    <string name="you">You</string>
+    <string name="next"> >>> </string>
+    <string name="play">Play</string>
+    <string name="rock_vs_rock">Rock vs Rock</string>
+    <string name="paper_vs_paper">Paper vs Paper</string>
+    <string name="scissors_vs_scissors">Scissors vs Scissors</string>
+    <string name="rock_beats_scissors">Rock beats Scissors</string>
+    <string name="scissors_beats_paper">Scissors beats paper</string>
+    <string name="paper_beats_rock">Paper beats Rock</string>
+    <string name="tie">It is a tie!</string>
+    <string name="you_win">You win!</string>
+    <string name="you_lose">You lose!</string>
+</resources>

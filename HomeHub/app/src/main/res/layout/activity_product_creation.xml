@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.sanesedu.homehub.ProductCreationActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Shop:"
+        android:id="@+id/shopTextView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:layout_alignParentLeft="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Department:"
+        android:id="@+id/departmentTextView"
+        android:layout_below="@+id/shopTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:layout_alignParentLeft="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Product: "
+        android:id="@+id/productTextView"
+        android:layout_below="@+id/departmentTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentLeft="true"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/productEditText"
+        android:layout_alignBottom="@+id/productTextView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@id/productTextView"
+        android:backgroundTint="@color/colorPrimary"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Quantity:"
+        android:id="@+id/quantityTextView"
+        android:layout_below="@+id/productTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentLeft="true"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/quantityTextView"
+        android:id="@+id/quantityPickerContainer"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:id="@+id/lessQuantityButton"
+            android:layout_alignBottom="@+id/quantityTextView"
+            android:layout_toRightOf="@+id/quantityTextView"
+            android:layout_toEndOf="@+id/departmentTextView"
+            android:background="@color/colorPrimary"
+            android:textColor="#ffffff"
+            android:onClick="decreaseQuantity" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="25sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="3dp"
+            android:id="@+id/quantityNumberTextView"
+            android:layout_alignBottom="@+id/lessQuantityButton"
+            android:layout_toRightOf="@+id/lessQuantityButton"
+            android:textColor="#000000"
+            />
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:id="@+id/moreQuantityButton"
+            android:layout_alignBottom="@+id/quantityTextView"
+            android:layout_toRightOf="@+id/quantityNumberTextView"
+            android:layout_toEndOf="@+id/quantityNumberTextView"
+            android:background="@color/colorPrimary"
+            android:textColor="#ffffff"
+            android:onClick="increaseQuantity" />
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Alert Quantity:"
+        android:id="@+id/alertQuantityTextView"
+        android:layout_below="@+id/quantityPickerContainer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="25dp"
+        android:layout_alignParentLeft="true"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/alertQuantityTextView"
+        android:layout_marginTop="10dp"
+        android:id="@+id/alertQuantityPickerContainer">
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:id="@+id/lessAlertQuantityButton"
+            android:layout_alignBottom="@+id/alertQuantityTextView"
+            android:layout_toRightOf="@+id/alertQuantityTextView"
+            android:background="@color/colorPrimary"
+            android:textColor="#ffffff"
+            android:onClick="decreaseAlertQuantity" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="3dp"
+            android:id="@+id/alertQuantityNumberTextView"
+            android:layout_alignBottom="@+id/lessAlertQuantityButton"
+            android:layout_toRightOf="@+id/lessAlertQuantityButton"
+            />
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:id="@+id/moreAlertQuantityButton"
+            android:layout_alignBottom="@+id/alertQuantityTextView"
+            android:layout_toRightOf="@+id/alertQuantityNumberTextView"
+            android:layout_toEndOf="@+id/alertQuantityNumberTextView"
+            android:background="@color/colorPrimary"
+            android:textColor="#ffffff"
+            android:onClick="increaseAlertQuantity" />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="Create"
+        android:id="@+id/createButton"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorPrimary"
+        android:textColor="#ffffff"
+        android:onClick="createProductInfo" />
+
+
+</RelativeLayout>

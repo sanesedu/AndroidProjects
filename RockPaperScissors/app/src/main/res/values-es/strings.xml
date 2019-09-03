@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Ropasci</string>
+    <string name="home">Inicio</string>
+    <string name="new_game">Nueva partida</string>
+    <string name="opponent">Oponente</string>
+    <string name="paper">Papel</string>
+    <string name="paper_beats_rock">Papel gana a Piedra</string>
+    <string name="paper_vs_paper">Papel vs Papel</string>
+    <string name="play">Jugar</string>
+    <string name="rock">Piedra</string>
+    <string name="rock_beats_scissors">Piedra gana a Tijeras</string>
+    <string name="rock_vs_rock">Piedra vs Piedra</string>
+    <string name="scissors">Tijera</string>
+    <string name="scissors_beats_paper">Tijeras gana a Papel</string>
+    <string name="scissors_vs_scissors">Tijeras vs Tijeras</string>
+    <string name="tie">¡Empate!</string>
+    <string name="you">Tú</string>
+    <string name="you_lose">¡Tú pierdes!</string>
+    <string name="you_win">¡Tú ganas!</string>
+</resources>

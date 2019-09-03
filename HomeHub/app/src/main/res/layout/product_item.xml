@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="88dp"
+    android:id="@+id/productInfoContainer"
+    android:background="#E0E0E0">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            tools:text="Kinder Bueno"
+            android:textSize="20sp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/product"
+            android:textColor="#000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="en Pescadería, El Corte Inglés"
+            android:gravity="bottom"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#011"
+            android:layout_below="@id/product"
+            android:id="@+id/locationProduct" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="5"
+        android:layout_marginTop="15dp"
+        android:textSize="20sp"
+        android:id="@+id/quantity"
+        android:layout_weight="2"
+        android:textColor="#000" />
+
+
+</LinearLayout>

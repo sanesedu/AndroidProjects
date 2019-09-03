@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">My Tic Tac Toe</string>
+    <string name="difficulty">Choose difficulty level: </string>
+    <string name="easy">Easy</string>
+    <string name="medium">Medium</string>
+    <string name="difficult">Difficult</string>
+    <string name="num_players">Choose number of players: </string>
+    <string name="one_player">1 player</string>
+    <string name="two_players">2 players</string>
+</resources>

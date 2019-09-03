@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/game_layout">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/opponent_layout">
+
+        <ImageView
+            style="@style/scissors" />
+
+        <ImageView
+            style="@style/paper" />
+
+        <ImageView
+            style="@style/rock" />
+
+
+    </LinearLayout>
+
+    <TextView
+        style="@style/opponent"
+        android:id="@+id/opp_name"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerVertical="true"
+        android:id="@+id/selection_container">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="60dp">
+
+            <ImageView
+                style="@style/opp_sel_item"
+                android:id="@+id/opp_sel_item"/>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="12dp" />
+
+            <ImageView
+                style="@style/you_sel_item"
+                android:id="@+id/you_sel_item"/>
+
+        </LinearLayout>
+
+        <Button
+            style="@style/play_button"
+            android:id="@+id/play_button"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="25dp"
+            />
+
+
+    </LinearLayout>
+
+
+    <TextView
+        style="@style/you"
+        android:id="@+id/you_name"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/your_layout">
+
+        <ImageView
+            style="@style/rock"
+            android:id="@+id/rock"/>
+
+        <ImageView
+            style="@style/paper"
+            android:id="@+id/paper"/>
+
+        <ImageView
+            style="@style/scissors"
+            android:id="@+id/scissors"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

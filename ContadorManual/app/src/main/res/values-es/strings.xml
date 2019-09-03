@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Contador Manual</string>
+    <string name="cero">0</string>
+    <string name="titulo">Contador</string>
+    <string name="reset">Reset</string>
+    <string name="negativo">Permitir cuenta negativa</string>
+    <string name="menos">-</string>
+    <string name="mas">+</string>
+</resources>

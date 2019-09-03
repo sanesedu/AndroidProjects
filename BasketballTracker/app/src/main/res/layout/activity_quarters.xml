@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sanesedu.basketballtracker.QuartersActivity"
+    android:layout_marginTop="12dp"
+    android:layout_marginLeft="32dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginBottom="30dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:id="@+id/titleQuarterContainer">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1st Quarter"
+            android:textColor="#000"
+            android:textSize="22sp"
+            android:layout_marginTop="15dp"
+            android:id="@+id/quarterTxt"
+            android:layout_marginBottom="10dp"
+            android:textStyle="bold"
+            android:layout_marginRight="80dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0:00"
+            android:textSize="28sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="#000"
+            android:id="@+id/minClockQuart"/>
+
+        <ImageView
+            android:id="@+id/playPauseQuarterBt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_play_arrow_black_48dp"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1.38"
+            android:layout_marginLeft="6dp"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/titleQuarterContainer">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/shotAdderBt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Shot"
+                android:textSize="17sp"/>
+
+            <TextView
+                android:id="@+id/pointsQuarterCounter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="12dp"
+                android:text="0 pts"
+                android:textColor="#000"
+                android:textSize="22sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0/0"
+                android:textSize="22sp"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="#000"
+                android:id="@+id/shotPerQuarterCounter"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/rebsAdderBt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Rebound"
+                android:textSize="17sp"/>
+
+            <TextView
+                android:id="@+id/defRebsQuarterCounter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="12dp"
+                android:text="0 def"
+                android:textColor="#000"
+                android:textSize="22sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 off"
+                android:textSize="22sp"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="#000"
+                android:id="@+id/offRebsQuarterConter"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/assistAdderBt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Assist"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/assistCounterTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="12dp"
+                android:text="0 as"
+                android:textColor="#000"
+                android:textSize="22sp" />
+
+            <Button
+                android:id="@+id/stealAdderBt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:text="Steal"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/stealCounterTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="12dp"
+                android:text="0 st"
+                android:textColor="#000"
+                android:textSize="22sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/tosAdderBt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Turnover"
+                android:textSize="17sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/toverCounterTxt"
+                android:text="0 to"
+                android:textSize="22sp"
+                android:layout_marginTop="12dp"
+                android:textColor="#000"/>
+
+            <Button
+                android:id="@+id/blockAdderBt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="Block"
+                android:textSize="17sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="0 bl"
+                android:textSize="22sp"
+                android:layout_marginTop="12dp"
+                android:textColor="#000"
+                android:id="@+id/blockQuarterCounter"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/foulAdderBt"
+                android:layout_marginTop="10dp"
+                android:text="Foul"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 fl"
+                android:id="@+id/foulCounterTxt"
+                android:textSize="22sp"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="#000"/>
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/endOfQuarterBt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="End of the quarter >>"
+        android:textSize="17sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"/>
+
+
+</RelativeLayout>

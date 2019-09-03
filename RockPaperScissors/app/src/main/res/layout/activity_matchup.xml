@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="me.sanesedu.rockpaperscissors.MatchupActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fullscreen">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            style="@style/opp_matchup"
+            android:id="@+id/opponent_matchup"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#000000"
+            android:id="@+id/anchor"/>
+
+        <ImageView
+            style="@style/you_matchup"
+            android:id="@+id/you_matchup"/>
+
+    </LinearLayout>
+
+    <Button
+        style="@style/next_button"
+        android:id="@+id/next_button"/>
+
+    <TextView
+        style="@style/full_opp_name"/>
+
+    <TextView
+        style="@style/you_full_name" />
+
+
+</RelativeLayout>

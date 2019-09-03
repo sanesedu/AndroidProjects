@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="me.sanesedu.mytictactoe.MainActivity"
+    style="@style/layout">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/title"
+            android:id="@+id/title"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                style="@style/easy_radio"
+                android:id="@+id/easy"/>
+
+            <RadioButton
+                style="@style/medium_radio"
+                android:id="@+id/medium"/>
+
+            <RadioButton
+                style="@style/difficult_radio"
+                android:id="@+id/difficult"/>
+
+        </RadioGroup>
+
+        <Button
+            style="@style/one_player"
+            android:id="@+id/one_player"/>
+
+        <Button
+            style="@style/two_players"
+            android:id="@+id/two_players"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

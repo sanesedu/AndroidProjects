@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.sanesedu.currencyconverter.MainActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@drawable/money"
+        android:layout_marginBottom="196dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="false"
+        android:cropToPadding="false" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/usdInput"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="110dp"
+        android:layout_alignParentLeft="true"
+        android:width="145dp"
+        android:hint="@string/usd"
+        android:maxWidth="160dp"
+        android:minWidth="120dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="USD to EUR"
+        android:id="@+id/textView"
+        android:layout_above="@+id/usdInput"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EUR"
+        android:id="@+id/eurTxt"
+        android:textSize="20sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="5dp"
+        android:textColor="#000000" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="EUR to USD"
+        android:id="@+id/textView3"
+        android:textStyle="bold"
+        android:gravity="right"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:layout_above="@+id/euroInput"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/euroInput"
+        android:layout_alignBottom="@+id/usdInput"
+        android:layout_toRightOf="@+id/usdInput"
+        android:layout_toEndOf="@+id/usdInput"
+        android:width="145dp"
+        android:layout_alignParentEnd="true"
+        android:inputType="none"
+        android:hint="EUR"
+        android:maxWidth="160dp"
+        android:minWidth="120dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Convert"
+        android:id="@+id/convertButton"
+        android:layout_above="@+id/eurTxt"
+        android:layout_centerHorizontal="true"
+        android:width="120dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="15sp"
+        android:onClick="convert" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="USD"
+        android:id="@+id/usdTxt"
+        android:layout_alignBottom="@+id/eurTxt"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textSize="20sp"
+        android:textColor="#000000" />
+
+</RelativeLayout>

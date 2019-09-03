@@ -1,0 +1,77 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="pantalla">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:padding">@dimen/min</item>
+    </style>
+
+    <style name="titulo">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/texto_max</item>
+        <item name="android:text">@string/titulo</item>
+    </style>
+
+    <style name="cuenta">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/max</item>
+        <item name="android:text">@string/cero</item>
+    </style>
+
+    <style name="boton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/med</item>
+        <item name="android:background">@drawable/boton</item>
+    </style>
+
+    <style name="boton_mas" parent="@style/boton">
+        <item name="android:layout_width">@dimen/max</item>
+        <item name="android:layout_height">@dimen/max</item>
+        <item name="android:text">@string/mas</item>
+        <item name="android:onClick">incrementar</item>
+    </style>
+
+    <style name="boton_menos" parent="@style/boton">
+        <item name="android:layout_width">@dimen/max</item>
+        <item name="android:layout_height">@dimen/max</item>
+        <item name="android:text">@string/menos</item>
+        <item name="android:onClick">decrementar</item>
+    </style>
+
+    <style name="boton_reset" parent="@style/boton">
+        <item name="android:layout_marginRight">@dimen/texto_med</item>
+        <item name="android:textSize">@dimen/texto_med</item>
+        <item name="android:text">@string/reset</item>
+        <item name="android:onClick">reset</item>
+    </style>
+
+    <style name="set">
+        <item name="android:layout_width">@dimen/ancho_set</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:inputType">numberSigned</item>
+        <item name="android:cursorVisible">false</item>
+        <item name="android:textSize">@dimen/texto_med</item>
+        <item name="android:hint">@string/cero</item>
+    </style>
+
+    <style name="checkbox">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/texto_min</item>
+        <item name="android:text">@string/negativo</item>
+        <item name="android:onClick">negativos</item>
+    </style>
+
+</resources>

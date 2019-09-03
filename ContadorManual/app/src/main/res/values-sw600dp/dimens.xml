@@ -1,0 +1,10 @@
+<resources>
+    <dimen name="texto_max">72sp</dimen>
+    <dimen name="texto_med">48sp</dimen>
+    <dimen name="texto_min">24sp</dimen>
+    <dimen name="max">168dp</dimen>
+    <dimen name="med">120dp</dimen>
+    <dimen name="min">24dp</dimen>
+    <dimen name="radio_boton">12dp</dimen>
+    <dimen name="ancho_set">144sp</dimen>
+</resources>

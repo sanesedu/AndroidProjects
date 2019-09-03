@@ -1,0 +1,30 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="home_padding">32dp</dimen>
+    <dimen name="home_titles">50sp</dimen>
+    <dimen name="new_game_home_width">160dp</dimen>
+    <dimen name="new_game_home_height">60dp</dimen>
+    <dimen name="new_game_home_marg_top">75dp</dimen>
+    <dimen name="game_layout_padding">16dp</dimen>
+    <dimen name="game_item_measures">100dp</dimen>
+    <dimen name="game_items_margin">12dp</dimen>
+    <dimen name="opp_game_items_measures">75dp</dimen>
+    <dimen name="game_names_txt_size">20sp</dimen>
+    <dimen name="selected_item_measures">100dp</dimen>
+    <dimen name="selected_item_margin">5dp</dimen>
+    <dimen name="play_button_width">100dp</dimen>
+    <dimen name="next_button_txt_size">24sp</dimen>
+    <dimen name="next_button_margin">12dp</dimen>
+    <dimen name="full_names_width">16dp</dimen>
+    <dimen name="full_names_margin">10dp</dimen>
+    <dimen name="full_names_txt_size">18sp</dimen>
+    <dimen name="result_container_margin_top">40dp</dimen>
+    <dimen name="elements_txt_size">28sp</dimen>
+    <dimen name="elements_margin_bot">75dp</dimen>
+    <dimen name="result_width">300dp</dimen>
+    <dimen name="result_txt_size">50sp</dimen>
+    <dimen name="button_container_margin_top">40dp</dimen>
+    <dimen name="result_buttons_width">130dp</dimen>
+    <dimen name="result_buttons_height">50dp</dimen>
+    <dimen name="result_buttons_margin">15dp</dimen>
+</resources>
